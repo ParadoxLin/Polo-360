@@ -1,0 +1,261 @@
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+body{
+	background: url(../img/bg.png) repeat-x;
+/*	height: 3000px;*/
+}
+/*解决高度塌陷*/
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+.header{
+	padding: 37px 0 46px;
+/*	background-color: #bfa;*/
+}
+.logo{
+	margin-left: 15px;
+}
+
+/*导航条*/
+.nav{
+	float: right;
+	margin-top: 22px; 
+}
+.nav li{
+	float: left;
+	padding: 0 10px 8px;
+	border-left: dotted #d6d6d6;
+}
+.nav a{
+	color: #666;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: georgia;
+/*	font: 14px georgia bold; 为什么不行k*/
+	text-decoration: none;
+}
+.nav a:hover{
+	color: #a1a1a1;
+	text-decoration: underline;
+}
+.nav p{
+	font: 11px tahoma;
+	color: #b7b7b7;
+}
+
+/*banner*/
+.banner{
+	height: 356px;
+	background: url(../img/shadow.png) no-repeat bottom center;
+	position: relative;
+}
+.pointer{
+	position: absolute;
+	top: 314px;
+	left: 15px;
+}
+.pointer a{
+	float: left;
+	width: 17px;
+	height: 17px;
+	background: url(../img/pointer.png) no-repeat;
+	margin-left: 4px;
+}
+.pointer .active,
+.poniter a:hover{
+	background: url(../img/pointer-active.png) no-repeat;
+}
+
+/*content*/
+.content{
+/*	background: red;*/
+}
+.content h1{
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: georgia;
+	padding: 6px 0 20px 0;
+	margin: 38px;
+	background: url(../img/line.png) no-repeat bottom center;
+}
+
+/*3个div*/
+.box1, .box2, .box3, .sc, .co, .nu{
+	float: left;
+/*	height: 100px;*/
+	width: 300px;
+/*	background-color: #bfa;*/
+}
+.box2, .co{
+	margin: 0 20px 0 20px;
+}
+
+.content h2{
+	color: #11719e;
+	font-family: georgia;
+	font-size: 21px;
+}
+.content h3{
+	color: #8c8c8c;
+	font-size: 12px;
+	font-family: helvetica;
+}
+.content .imgdiv{
+	margin: 16px 0 10px 0;
+	width: 299px;
+	height: 190px;
+	background: url(../img/img-bg.png) no-repeat;
+	
+	text-align: center;
+	padding-top: 12px;
+}
+.content p{
+	height: 92px;
+	font-size: 13px;
+	font-family: Georgia;
+	font-weight: bold;
+	line-height: 15px;
+}
+.button{
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: url(../img/btn1.png);
+	text-decoration: none;
+	color: #016999;
+	font-size: 12px;
+	font: 12px/40px georgia ;
+	text-indent: 3em;
+	margin-bottom: 35px;
+/*	margin-left: 60px;*/
+}
+
+/*设置contact*/
+/*.contact{
+	background: url(../img/line.png) no-repeat top center;
+}
+.sc, .co, .nu{
+	float: left;
+	height: 300px;
+	width: 300px;
+	background-color: skyblue;
+} */
+
+.contact .txt{
+	width: 276px;
+	height: 33px;
+	line-height: 33px;
+	background: url(../img/input.png) no-repeat;
+	/*单独为IE6设置背景框不随元素滚动*/
+	_background-attachment: fixed;
+	border: none;
+	padding: 0px 10px;
+	margin: 0px 0px 16px;
+}
+.contact .tarea{
+	width: 276px;
+	height: 124px;
+	background: url(../img/textarea.png) no-repeat;
+	border: none;
+	overflow: auto;
+	resize: none;
+	padding: 5px 10px;
+	margin: 0px;
+}
+.contact .button2{
+	width: 163px;
+	height: 32px;
+	background: url(../img/btn2.png);
+	border: none;
+	padding: 0px;
+	margin: 11px 0px 23px;
+	/*设置按钮上的文字*/
+	color: white;
+	font: 13px georgia;
+	text-align: center;
+	text-indent: -1em;
+	cursor: pointer; /*移入变小手*/
+}
+
+.contact h2{
+	font: 18px/1 georgia;
+	border-bottom: 1px dashed #d3d3d3;
+	padding: 44px 0px 10px 0px;
+	margin-bottom: 15px;
+}
+
+/*左边框*/
+.sc .p1{
+	font: bold 12px/1 georgia;
+}
+.sc .icon{
+	margin-top: 22px;
+	font-size: 0px;
+}
+.sc .icon a{
+	margin-right: 6px;
+}
+.sc .nl{
+	font: bold 18px/1 Gill Sans MT;
+	padding: 22px 0px 10px;
+}
+.sc .txt{
+	margin: 10px 0px 0px;
+}
+
+/*右边框*/
+.nu img{
+	float: left;
+	margin-right: 8px;
+}
+.nu p{
+	color: #444;
+	font: bold 12px/1 Georgia;
+	height: 58px;
+	/*单独为IE6设置*/
+	_height: 60px;
+	border-bottom: 1px dashed #d3d3d3;
+	margin-bottom: 14px;
+	padding-bottom: 9px;
+}
+.nu .no-margin{
+	margin-bottom: 0px;
+}
+
+/*footer开始*/
+.footer{
+	height: 173px;
+	background: #333;
+	border-top: 10px solid #4c4c4c;
+}
+.footer .w{
+	padding-top: 18px;
+}
+
+.footer a, .footer p{
+	color: #999;
+	font: bold 11px Georgia;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: white;
+}
+
+.footer p{
+	margin-left: 8px;
+	margin-right: 23px;
+	line-height: 2;
+}
+.footer .copy{
+	float: right;
+	display: inline; /*处理IE的双倍边距*/
+}
